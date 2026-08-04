@@ -13,6 +13,11 @@ $form_name  = $form_name ?? 'Book Consultation';
 $extra_class = trim($extra_class ?? '');
 $form_class  = trim('leadform ' . $extra_class);
 ?>
+<style>
+.select2-results__option {
+  color: #000 !important;
+}
+</style>
 <form class="<?= esc($form_class) ?>" novalidate>
 
   <input type="hidden" id="<?= esc($prefix) ?>_source_url" name="source_url">
